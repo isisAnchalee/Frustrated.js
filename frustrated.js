@@ -7,7 +7,6 @@ function clickCounter() {
 		for (i= document.eventsArr.length-5; i<=document.eventsArr.length-2; i++){
 			if((document.eventsArr[i+1]-document.eventsArr[i])/3+(document.eventsArr[i+2]-document.eventsArr[i+1])/3+(document.eventsArr[i+3]-document.eventsArr[i+2])/3 <= 800){
 				document.eventsArr = [];
-				console.log(document.eventsArr);
 				document.getElementById("body").dispatchEvent(customerFrustratedEvent);
 			}
 		}
