@@ -33,7 +33,7 @@ var customerFrustratedEvent = new CustomEvent(
 );
 
 document.addEventListener("customerFrustrated", function(e){ 
-	alert("Meow=^.^=");
+/*	alert("Meow=^.^="); */
 }, false);
 
 
