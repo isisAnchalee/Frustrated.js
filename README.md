@@ -1,6 +1,6 @@
 Frustrated.js
 =============
-Find out if your customer is frustrated with your application. It works by detecting rapid-fire clicks on your application and firing a custom event ".." that you can listen on. 
+Find out if your customer is frustrated with your application. It works by detecting rapid-fire clicks on your application and firing a custom event "customerFrustrated" that you can listen on. 
 
 
 Installing
@@ -31,7 +31,7 @@ Telly
 LegalReach
 
 
-
+Created by @isisAnchalee
 
 =^.^=
 -----
