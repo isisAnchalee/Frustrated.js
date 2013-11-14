@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src='frustrated.js'></script>
+
+  </head>
+
+  <body>
+
+    <div class="container text-center" style="margin-top:40px;">
+      <button class="btn btn-primary btn-lg">I'm an annoying button that just won't click</button>
+    </div>
+
+    <script type="text/javascript">
+
+      document.addEventListener("customerFrustrated", function(e){ 
+        alert("Looks like something is frustrating you :(. Email us at support@company.com and we'll help you!");
+      }, false);
+
+    </script>
+
+  </body>
+</html>
