@@ -9,7 +9,6 @@ Installing
 Include [the javascript](frustrated.js) in your HTML template and create the event listener to listen on your customerFrustrated event[example]:
 
 ```javascript
-{
 
 <script type="text/javascript">
 
@@ -18,12 +17,12 @@ Include [the javascript](frustrated.js) in your HTML template and create the eve
     }, false);
 
 </script>
-}
 ```
 
 Companies Using Frustrated.js
 -----------------------------
 Telly
+
 LegalReach
 
 
