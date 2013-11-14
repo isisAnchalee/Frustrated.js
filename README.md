@@ -22,7 +22,6 @@ Include [the javascript](frustrated.js) in your HTML template and create the eve
 Companies Using Frustrated.js
 -----------------------------
 Telly
-
 LegalReach
 
 
