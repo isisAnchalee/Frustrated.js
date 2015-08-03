@@ -1,11 +1,13 @@
 /* Frustrated.JS */
-function clickCounter() {
-  document.onclick = function(event) {
+(function () {
+  var eventsArr = [];
 
-    document.eventsArr.push(new Date())
-    if (document.eventsArr.length > 5){
-      for (var i= document.eventsArr.length-5; i<=document.eventsArr.length-2; i++){
-        if((document.eventsArr[i+1]-document.eventsArr[i])/3+(document.eventsArr[i+2]-document.eventsArr[i+1])/3+(document.eventsArr[i+3]-document.eventsArr[i+2])/3 <= 800){
+  document.addEventListener("click", function(even) {
+    eventsArr.push(new Date());
+
+    if (eventsArr.length > 5){
+      for (var i= eventsArr.length-5; i<=eventsArr.length-2; i++){
+        if ((eventsArr[i+1]-eventsArr[i])/3+(eventsArr[i+2]-eventsArr[i+1])/3+(eventsArr[i+3]-eventsArr[i+2])/3 <= 800){
 
 
           var customerFrustratedEvent = new CustomEvent(
@@ -21,17 +23,10 @@ function clickCounter() {
           );
 
 
-          document.eventsArr = [];
-          document.getElementsByTagName("body")[0].dispatchEvent(customerFrustratedEvent);
+          eventsArr = [];
+          document.dispatchEvent(customerFrustratedEvent);
         }
       }
     } 
-  }
-};
-
-
-window.onload = function() {
-  document.eventsArr = [];
-  clickCounter();
-}
-
+  });
+})();
